@@ -1,0 +1,10 @@
+{
+    "baseUrl": "https://jsonplaceholder.typicode.com/",
+    "video": false,
+    "reporter": "../node_modules/mochawesome/src/mochawesome.js",
+    "reporterOptions": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+    }
+}

@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-18T02:03:06.379Z",
+    "end": "2022-02-18T02:03:06.887Z",
+    "duration": 508,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f0489275-f892-4f38-ba92-368f1674aaaf",
+      "title": "",
+      "fullFile": "cypress/integration/comments/GETComments.spec.js",
+      "file": "cypress/integration/comments/GETComments.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c9046224-c3b3-4299-b9a3-427871344329",
+          "title": "Realizar uma requisicao do tipo GET",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar status da requisicao e email do comentario",
+              "fullTitle": "Realizar uma requisicao do tipo GET Validar status da requisicao e email do comentario",
+              "timedOut": null,
+              "duration": 493,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "GETComments.buscarComentarioPeloNome('alias odio sit').should(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body[0].email).to.eq('Lew@alysha.tv');\n});",
+              "err": {},
+              "uuid": "93d4737a-f87d-40d9-824d-5c50ca17646f",
+              "parentUUID": "c9046224-c3b3-4299-b9a3-427871344329",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "93d4737a-f87d-40d9-824d-5c50ca17646f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 493,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

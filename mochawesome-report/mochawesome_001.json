@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-18T02:03:09.046Z",
+    "end": "2022-02-18T02:03:09.400Z",
+    "duration": 354,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "613120c3-1b7e-4eb9-adf9-2f3a0318ae7e",
+      "title": "",
+      "fullFile": "cypress/integration/users/POSTUsers.spec.js",
+      "file": "cypress/integration/users/POSTUsers.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f5bf514c-5e35-4c85-b9ff-82aa4b198312",
+          "title": "Realizar uma requisição do tipo POST",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar status da requisicao e id do usuario",
+              "fullTitle": "Realizar uma requisição do tipo POST Validar status da requisicao e id do usuario",
+              "timedOut": null,
+              "duration": 339,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "POSTUsers.addUsers().should(response => {\n  expect(response.status).to.eq(201);\n  expect(response.body.id).to.eq(11);\n});",
+              "err": {},
+              "uuid": "a20f1f3d-e4ea-4f05-9867-624f05ba3ebc",
+              "parentUUID": "f5bf514c-5e35-4c85-b9ff-82aa4b198312",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a20f1f3d-e4ea-4f05-9867-624f05ba3ebc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 339,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

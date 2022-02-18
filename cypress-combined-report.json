@@ -1,0 +1,220 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-18T02:03:06.379Z",
+    "end": "2022-02-18T02:03:12.274Z",
+    "duration": 1168,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "613120c3-1b7e-4eb9-adf9-2f3a0318ae7e",
+      "title": "",
+      "fullFile": "cypress/integration/users/POSTUsers.spec.js",
+      "file": "cypress/integration/users/POSTUsers.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f5bf514c-5e35-4c85-b9ff-82aa4b198312",
+          "title": "Realizar uma requisição do tipo POST",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar status da requisicao e id do usuario",
+              "fullTitle": "Realizar uma requisição do tipo POST Validar status da requisicao e id do usuario",
+              "timedOut": null,
+              "duration": 339,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "POSTUsers.addUsers().should(response => {\n  expect(response.status).to.eq(201);\n  expect(response.body.id).to.eq(11);\n});",
+              "err": {},
+              "uuid": "a20f1f3d-e4ea-4f05-9867-624f05ba3ebc",
+              "parentUUID": "f5bf514c-5e35-4c85-b9ff-82aa4b198312",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a20f1f3d-e4ea-4f05-9867-624f05ba3ebc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 339,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "4a10a4a3-da60-48a9-8b43-1c29b5590eb9",
+      "title": "",
+      "fullFile": "cypress/integration/users/PUTUsers.spec.js",
+      "file": "cypress/integration/users/PUTUsers.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f9cca47f-8689-4cfa-924d-1eff43a4bfad",
+          "title": "Realizar uma requisição do tipo PUT",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar status da requisicao e alterar o email, lat e lng do usuario com o id 5",
+              "fullTitle": "Realizar uma requisição do tipo PUT Validar status da requisicao e alterar o email, lat e lng do usuario com o id 5",
+              "timedOut": null,
+              "duration": 336,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "PUTUsers.alterarUsuarios(5).should(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body.email).to.eq('lucio@annie.ca');\n  expect(response.body.address.geo.lat).to.eq('-50.9999');\n  expect(response.body.address.geo.lng).to.eq('60.9999');\n});",
+              "err": {},
+              "uuid": "4b7e35d9-5b81-41d0-955f-6b7b5078b68b",
+              "parentUUID": "f9cca47f-8689-4cfa-924d-1eff43a4bfad",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4b7e35d9-5b81-41d0-955f-6b7b5078b68b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 336,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "f0489275-f892-4f38-ba92-368f1674aaaf",
+      "title": "",
+      "fullFile": "cypress/integration/comments/GETComments.spec.js",
+      "file": "cypress/integration/comments/GETComments.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c9046224-c3b3-4299-b9a3-427871344329",
+          "title": "Realizar uma requisicao do tipo GET",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar status da requisicao e email do comentario",
+              "fullTitle": "Realizar uma requisicao do tipo GET Validar status da requisicao e email do comentario",
+              "timedOut": null,
+              "duration": 493,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "GETComments.buscarComentarioPeloNome('alias odio sit').should(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body[0].email).to.eq('Lew@alysha.tv');\n});",
+              "err": {},
+              "uuid": "93d4737a-f87d-40d9-824d-5c50ca17646f",
+              "parentUUID": "c9046224-c3b3-4299-b9a3-427871344329",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "93d4737a-f87d-40d9-824d-5c50ca17646f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 493,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
